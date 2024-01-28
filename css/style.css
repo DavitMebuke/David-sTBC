@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(244, 244, 244);
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 84px;
+    background-color: #1a1e1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.headerContent {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerImg {
+    width: 182px;
+    height: 40px;
+    cursor: pointer;
+}
+.headerAtagCNTNR {
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerAtag {
+    text-decoration: none;
+}
+.headerAtag:hover {
+    color: #00a3e0;
+    transition: 0.3s ease;
+}
+.headerActiveAtag {
+    color: #00a3e0;
+}
+.headerNavbarBtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.TBCxUSAIDdiv {
+    height: 300px;
+    width: 100%;
+    background: url(https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg/v1/fill/w_1527,h_420,al_c,q_85,enc_auto/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+.TBCxUSAIDdiv > div {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.middleText {
+    width: 100%;
+    height: 460px;
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+.middleText > div {
+    width: 980px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.middleText > div > a {
+    width: 116px;
+    font-size: 20px;
+    color: #00a3e0;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.middleText > div > a:hover {
+    color: grey;
+}
+
+
+
+.cardCont {
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardCont > h2 {
+    width: 980px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: start;
+}
+.cardCont > div {
+    width: 980px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 414px);
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(112, 110, 110);
+    border-radius: 7px;
+    padding: 1px 1px;
+}
+.cardHeader {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardHeader > img {
+    width: 100%;
+    border-radius: 7px;
+}
+.cardHeader > h2 {
+    padding-left: 20px;
+    font-size: 18px;
+}
+.cardHeader > p {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cardFooter {
+    display: flex;
+    gap: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.cardFooter > a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00a3e0;
+    transition: 0.3s ease;
+}
+.cardFooter > a:hover {
+    opacity: 0.7;
+}
+
+.cardFooter > img{
+    width: 23px;
+}
+
+.partnersDiv {
+    max-width: 100%;
+    height: 300px;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.partnersDiv > h2 {
+    text-align: left;
+    width: 980px;
+}
+.partnersDiv main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.partnersScroll {
+    width: 980px;
+    display: flex;
+    overflow-x: scroll;
+    transition: opacity 1s ease-in-out;
+}
+.partnersScroll .partnersImgContainer {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    flex: none;
+    transition: opacity 1s ease-in-out;
+}
+
+#container3 {
+    justify-content: center;
+}
+.partnersImgContainer.highlight {
+    opacity: 1;
+}
+.partnersImgContainer:not(.highlight) {
+    opacity: 0.5;
+}
+.partnersScroll::-webkit-scrollbar {
+    display: none;
+}
+.partnersImgContainer > img {
+    width: 250px;
+}
+.partnersBackAndNextBtn {
+    width: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+.partnersBackAndNextBtn:hover {
+    opacity: 0.8;
+}
+
+
+
+.questionsDiv {
+    max-width: 100%;
+    height: auto;
+    padding: 100px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.questionsContainerHeader {
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.questionsContainer {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.questionsContainer > div {
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+.questionsContainer > div > img{
+    width: 20px;
+}
+
+.span {
+    color: #00a3e0;
+    cursor: pointer;
+}
+.span:hover {
+    color: grey;
+    transition: 0.4s ease;
+}
+.hiddenSpan {
+    display: none;
+}
+
+
+
+.hiddenTXT1,
+.hiddenTXT2,
+.hiddenTXT3 {
+    display: none;
+}
+
+
+
+.show {
+    display: block !important;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #1a1e1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > div {
+    width: 980px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerDivs {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footerDivs > img {
+    width: 100px;
+}
+.footerRight > div {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.footerRight > div > img {
+    width: 39px;
+    cursor: pointer;
+}
+.footerRight > button {
+    width: 162px;
+    height: 39px;
+    background-color: #00a3e0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.hiddenFooterDiv {
+    display: none;
+}
